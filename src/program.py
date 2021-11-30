@@ -30,12 +30,12 @@ def main():
         inp1=input("Введите 1 число:")
         inp2=input("Введите 2 число /(или нажмите Enter/):")
         inp1 = float(inp1)
-        if inp1 < 0:
+        if inp1 <= 0:
             print("Введенное значение должно быть больше 0")
             return
         if inp2 != "" :
             inp2 = float(inp2)
-            if inp2 < 0:
+            if inp2 <= 0:
                 print("Введенное значение должно быть больше 0")
                 return
             ret = soft_per_acre(inp1, inp2)
